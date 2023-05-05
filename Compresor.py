@@ -114,7 +114,8 @@ class HuffmanCoding:
     return output_path
 
 
-huffman = HuffmanCoding("./LaBiblia.txt")
+path = input("Digite el nombre del archivo que se va a comprimir")
+huffman = HuffmanCoding(f"./{path}.txt")
 compressed_file = huffman.compress()
 
 print("Terminado")
